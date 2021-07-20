@@ -1,16 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>Hello GitHub</title>
-  </head>
-  <body>
-    <h1>喔第一次我</h1>
-    <div>
-       <ul>
-           <li><a href="https://blade30719.github.io/firstPage.html">連結一</a></li>
-       </ul>
-        
+    <title>葉翔雲的小小個人網站</title>
+    <style>
+        body {
+            background-image: url("images/woods.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: beige;
+        }
+
+        .flex-container>img {
+            margin: 4px;
+            padding: 5px;
+            border-radius: 7pt;
+            flex: 1 6 20%;
+            order: 1;
+        }
+
+        .flex-container>article {
+            margin: 4px;
+            padding: 5px;
+            border-radius: 7pt;
+            flex: 3 1 60%;
+            order: 2;
+        }
+
+        .circleImg {
+            border: 1px solid #ddd;
+            border-radius: 30%;
+            padding: 5px;
+            width: "300";
+            height: "400"
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>葉翔雲 的個人網站</h1>
+            <section>
+                <div class="flex-container">
+                    <img class="circleImg" src="images/me.jpg" alt="照片" width="150" height="200">
+                    <article>
+                        <h1>葉翔雲</h1>
+                        靜宜大學資訊工程學系
+                        <br>
+
+
+
+                    </article>
+
+
+                </div>
+            </section>
+
+        </div>
+
     </div>
-  </body>
+
+    <div class="container">
+        <ul>
+            <li><a href="https://blade30719.github.io/firstPage.html">連結一</a></li>
+        </ul>
+
+    </div>
+</body>
+
 </html>
